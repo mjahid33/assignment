@@ -1,0 +1,619 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-16T01:12:27.576Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2554400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Positive Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;positive-sceario:-get-capital-city-with-country-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "W3sibmFtZSI6eyJjb21tb24iOiJVbml0ZWQgU3RhdGVzIiwib2ZmaWNpYWwiOiJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJuYXRpdmVOYW1lIjp7ImVuZyI6eyJvZmZpY2lhbCI6IlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYSIsImNvbW1vbiI6IlVuaXRlZCBTdGF0ZXMifX19LCJ0bGQiOlsiLnVzIl0sImNjYTIiOiJVUyIsImNjbjMiOiI4NDAiLCJjY2EzIjoiVVNBIiwiY2lvYyI6IlVTQSIsImluZGVwZW5kZW50Ijp0cnVlLCJzdGF0dXMiOiJvZmZpY2lhbGx5LWFzc2lnbmVkIiwidW5NZW1iZXIiOnRydWUsImN1cnJlbmNpZXMiOnsiVVNEIjp7Im5hbWUiOiJVbml0ZWQgU3RhdGVzIGRvbGxhciIsInN5bWJvbCI6IiQifX0sImlkZCI6eyJyb290IjoiKzEiLCJzdWZmaXhlcyI6WyIyMDEiLCIyMDIiLCIyMDMiLCIyMDUiLCIyMDYiLCIyMDciLCIyMDgiLCIyMDkiLCIyMTAiLCIyMTIiLCIyMTMiLCIyMTQiLCIyMTUiLCIyMTYiLCIyMTciLCIyMTgiLCIyMTkiLCIyMjAiLCIyMjQiLCIyMjUiLCIyMjciLCIyMjgiLCIyMjkiLCIyMzEiLCIyMzQiLCIyMzkiLCIyNDAiLCIyNDgiLCIyNTEiLCIyNTIiLCIyNTMiLCIyNTQiLCIyNTYiLCIyNjAiLCIyNjIiLCIyNjciLCIyNjkiLCIyNzAiLCIyNzIiLCIyNzQiLCIyNzYiLCIyODEiLCIyODMiLCIzMDEiLCIzMDIiLCIzMDMiLCIzMDQiLCIzMDUiLCIzMDciLCIzMDgiLCIzMDkiLCIzMTAiLCIzMTIiLCIzMTMiLCIzMTQiLCIzMTUiLCIzMTYiLCIzMTciLCIzMTgiLCIzMTkiLCIzMjAiLCIzMjEiLCIzMjMiLCIzMjUiLCIzMjciLCIzMzAiLCIzMzEiLCIzMzQiLCIzMzYiLCIzMzciLCIzMzkiLCIzNDYiLCIzNDciLCIzNTEiLCIzNTIiLCIzNjAiLCIzNjEiLCIzNjQiLCIzODAiLCIzODUiLCIzODYiLCI0MDEiLCI0MDIiLCI0MDQiLCI0MDUiLCI0MDYiLCI0MDciLCI0MDgiLCI0MDkiLCI0MTAiLCI0MTIiLCI0MTMiLCI0MTQiLCI0MTUiLCI0MTciLCI0MTkiLCI0MjMiLCI0MjQiLCI0MjUiLCI0MzAiLCI0MzIiLCI0MzQiLCI0MzUiLCI0NDAiLCI0NDIiLCI0NDMiLCI0NDciLCI0NTgiLCI0NjMiLCI0NjQiLCI0NjkiLCI0NzAiLCI0NzUiLCI0NzgiLCI0NzkiLCI0ODAiLCI0ODQiLCI1MDEiLCI1MDIiLCI1MDMiLCI1MDQiLCI1MDUiLCI1MDciLCI1MDgiLCI1MDkiLCI1MTAiLCI1MTIiLCI1MTMiLCI1MTUiLCI1MTYiLCI1MTciLCI1MTgiLCI1MjAiLCI1MzAiLCI1MzEiLCI1MzQiLCI1MzkiLCI1NDAiLCI1NDEiLCI1NTEiLCI1NTkiLCI1NjEiLCI1NjIiLCI1NjMiLCI1NjQiLCI1NjciLCI1NzAiLCI1NzEiLCI1NzMiLCI1NzQiLCI1NzUiLCI1ODAiLCI1ODUiLCI1ODYiLCI2MDEiLCI2MDIiLCI2MDMiLCI2MDUiLCI2MDYiLCI2MDciLCI2MDgiLCI2MDkiLCI2MTAiLCI2MTIiLCI2MTQiLCI2MTUiLCI2MTYiLCI2MTciLCI2MTgiLCI2MTkiLCI2MjAiLCI2MjMiLCI2MjYiLCI2MjgiLCI2MjkiLCI2MzAiLCI2MzEiLCI2MzYiLCI2NDEiLCI2NDYiLCI2NTAiLCI2NTEiLCI2NTciLCI2NjAiLCI2NjEiLCI2NjIiLCI2NjciLCI2NjkiLCI2NzgiLCI2ODEiLCI2ODIiLCI3MDEiLCI3MDIiLCI3MDMiLCI3MDQiLCI3MDYiLCI3MDciLCI3MDgiLCI3MTIiLCI3MTMiLCI3MTQiLCI3MTUiLCI3MTYiLCI3MTciLCI3MTgiLCI3MTkiLCI3MjAiLCI3MjQiLCI3MjUiLCI3MjciLCI3MzAiLCI3MzEiLCI3MzIiLCI3MzQiLCI3MzciLCI3NDAiLCI3NDMiLCI3NDciLCI3NTQiLCI3NTciLCI3NjAiLCI3NjIiLCI3NjMiLCI3NjUiLCI3NjkiLCI3NzAiLCI3NzIiLCI3NzMiLCI3NzQiLCI3NzUiLCI3NzkiLCI3ODEiLCI3ODUiLCI3ODYiLCI4MDEiLCI4MDIiLCI4MDMiLCI4MDQiLCI4MDUiLCI4MDYiLCI4MDgiLCI4MTAiLCI4MTIiLCI4MTMiLCI4MTQiLCI4MTUiLCI4MTYiLCI4MTciLCI4MTgiLCI4MjgiLCI4MzAiLCI4MzEiLCI4MzIiLCI4NDMiLCI4NDUiLCI4NDciLCI4NDgiLCI4NTAiLCI4NTQiLCI4NTYiLCI4NTciLCI4NTgiLCI4NTkiLCI4NjAiLCI4NjIiLCI4NjMiLCI4NjQiLCI4NjUiLCI4NzAiLCI4NzIiLCI4NzgiLCI5MDEiLCI5MDMiLCI5MDQiLCI5MDYiLCI5MDciLCI5MDgiLCI5MDkiLCI5MTAiLCI5MTIiLCI5MTMiLCI5MTQiLCI5MTUiLCI5MTYiLCI5MTciLCI5MTgiLCI5MTkiLCI5MjAiLCI5MjUiLCI5MjgiLCI5MjkiLCI5MzAiLCI5MzEiLCI5MzQiLCI5MzYiLCI5MzciLCI5MzgiLCI5NDAiLCI5NDEiLCI5NDciLCI5NDkiLCI5NTEiLCI5NTIiLCI5NTQiLCI5NTYiLCI5NTkiLCI5NzAiLCI5NzEiLCI5NzIiLCI5NzMiLCI5NzUiLCI5NzgiLCI5NzkiLCI5ODAiLCI5ODQiLCI5ODUiLCI5ODkiXX0sImNhcGl0YWwiOlsiV2FzaGluZ3RvbiwgRC5DLiJdLCJhbHRTcGVsbGluZ3MiOlsiVVMiLCJVU0EiLCJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiXSwicmVnaW9uIjoiQW1lcmljYXMiLCJzdWJyZWdpb24iOiJOb3J0aCBBbWVyaWNhIiwibGFuZ3VhZ2VzIjp7ImVuZyI6IkVuZ2xpc2gifSwidHJhbnNsYXRpb25zIjp7ImFyYSI6eyJvZmZpY2lhbCI6Itin2YTZiNmE2KfZitin2Kog2KfZhNmF2KrYrdiv2Kkg2KfZhNin2YXYsdmK2YPZitipIiwiY29tbW9uIjoi2KfZhNmI2YTYp9mK2KfYqiDYp9mE2YXYqtit2K/YqSJ9LCJicmUiOnsib2ZmaWNpYWwiOiJTdGFkb8O5LVVuYW5ldCBBbWVyaWthIiwiY29tbW9uIjoiU3RhZG/DuS1VbmFuZXQifSwiY2VzIjp7Im9mZmljaWFsIjoiU3BvamVuw6kgc3TDoXR5IGFtZXJpY2vDqSIsImNvbW1vbiI6IlNwb2plbsOpIHN0w6F0eSJ9LCJjeW0iOnsib2ZmaWNpYWwiOiJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiLCJjb21tb24iOiJVbml0ZWQgU3RhdGVzIn0sImRldSI6eyJvZmZpY2lhbCI6IlZlcmVpbmlndGUgU3RhYXRlbiB2b24gQW1lcmlrYSIsImNvbW1vbiI6IlZlcmVpbmlndGUgU3RhYXRlbiJ9LCJlc3QiOnsib2ZmaWNpYWwiOiJBbWVlcmlrYSDDnGhlbmRyaWlnaWQiLCJjb21tb24iOiJBbWVlcmlrYSDDnGhlbmRyaWlnaWQifSwiZmluIjp7Im9mZmljaWFsIjoiQW1lcmlrYW4geWhkeXN2YWxsYXQiLCJjb21tb24iOiJZaGR5c3ZhbGxhdCJ9LCJmcmEiOnsib2ZmaWNpYWwiOiJMZXMgw6l0YXRzLXVuaXMgZCdBbcOpcmlxdWUiLCJjb21tb24iOiLDiXRhdHMtVW5pcyJ9LCJocnYiOnsib2ZmaWNpYWwiOiJTamVkaW5qZW5lIERyxb5hdmUgQW1lcmlrZSIsImNvbW1vbiI6IlNqZWRpbmplbmUgQW1lcmnEjWtlIERyxb5hdmUifSwiaHVuIjp7Im9mZmljaWFsIjoiQW1lcmlrYWkgRWd5ZXPDvGx0IMOBbGxhbW9rIiwiY29tbW9uIjoiQW1lcmlrYWkgRWd5ZXPDvGx0IMOBbGxhbW9rIn0sIml0YSI6eyJvZmZpY2lhbCI6IlN0YXRpIFVuaXRpIGQnQW1lcmljYSIsImNvbW1vbiI6IlN0YXRpIFVuaXRpIGQnQW1lcmljYSJ9LCJqcG4iOnsib2ZmaWNpYWwiOiLjgqLjg6Hjg6rjgqvlkIjooYblm70iLCJjb21tb24iOiLjgqLjg6Hjg6rjgqvlkIjooYblm70ifSwia29yIjp7Im9mZmljaWFsIjoi7JWE66mU66as7Lm0IO2Vqeykkeq1rSIsImNvbW1vbiI6IuuvuOq1rSJ9LCJubGQiOnsib2ZmaWNpYWwiOiJWZXJlbmlnZGUgU3RhdGVuIHZhbiBBbWVyaWthIiwiY29tbW9uIjoiVmVyZW5pZ2RlIFN0YXRlbiJ9LCJwZXIiOnsib2ZmaWNpYWwiOiLYp9uM2KfZhNin2Kog2YXYqtit2K/ZhyDYotmF2LHbjNqp2KciLCJjb21tb24iOiLYp9uM2KfZhNin2Kog2YXYqtit2K/ZhyDYotmF2LHbjNqp2KcifSwicG9sIjp7Im9mZmljaWFsIjoiU3RhbnkgWmplZG5vY3pvbmUgQW1lcnlraSIsImNvbW1vbiI6IlN0YW55IFpqZWRub2N6b25lIn0sInBvciI6eyJvZmZpY2lhbCI6IkVzdGFkb3MgVW5pZG9zIGRhIEFtw6lyaWNhIiwiY29tbW9uIjoiRXN0YWRvcyBVbmlkb3MifSwicnVzIjp7Im9mZmljaWFsIjoi0KHQvtC10LTQuNC90LXQvdC90YvQtSDQqNGC0LDRgtGLINCQ0LzQtdGA0LjQutC4IiwiY29tbW9uIjoi0KHQvtC10LTQuNC90ZHQvdC90YvQtSDQqNGC0LDRgtGLINCQ0LzQtdGA0LjQutC4In0sInNsayI6eyJvZmZpY2lhbCI6IlNwb2plbsOpIMWhdMOhdHkgQW1lcmlja8OpIiwiY29tbW9uIjoiU3BvamVuw6kgxaF0w6F0eSBhbWVyaWNrw6kifSwic3BhIjp7Im9mZmljaWFsIjoiRXN0YWRvcyBVbmlkb3MgZGUgQW3DqXJpY2EiLCJjb21tb24iOiJFc3RhZG9zIFVuaWRvcyJ9LCJzd2UiOnsib2ZmaWNpYWwiOiJBbWVyaWthcyBmw7ZyZW50YSBzdGF0ZXIiLCJjb21tb24iOiJVU0EifSwidHVyIjp7Im9mZmljaWFsIjoiQW1lcmlrYSBCaXJsZcWfaWsgRGV2bGV0bGVyaSIsImNvbW1vbiI6IkFtZXJpa2EgQmlybGXFn2lrIERldmxldGxlcmkifSwidXJkIjp7Im9mZmljaWFsIjoi2LHbjNin2LPYqtuB2KfYptuSINmF2KrYrdiv24Eg2KfZhdix24zaqdinIiwiY29tbW9uIjoi2LHbjNin2LPYqtuB2KfYptuSINmF2KrYrdiv24EifSwiemhvIjp7Im9mZmljaWFsIjoi576O5Yip5Z2a5ZCI5LyX5Zu9IiwiY29tbW9uIjoi576O5Zu9In19LCJsYXRsbmciOlszOC4wLC05Ny4wXSwibGFuZGxvY2tlZCI6ZmFsc2UsImJvcmRlcnMiOlsiQ0FOIiwiTUVYIl0sImFyZWEiOjkzNzI2MTAuMCwiZGVtb255bXMiOnsiZW5nIjp7ImYiOiJBbWVyaWNhbiIsIm0iOiJBbWVyaWNhbiJ9LCJmcmEiOnsiZiI6IkFtw6lyaWNhaW5lIiwibSI6IkFtw6lyaWNhaW4ifX0sImZsYWciOiJcdUQ4M0NcdURERkFcdUQ4M0NcdURERjgiLCJtYXBzIjp7Imdvb2dsZU1hcHMiOiJodHRwczovL2dvby5nbC9tYXBzL2U4TTI0NnpZNEJTamtqQXY2Iiwib3BlblN0cmVldE1hcHMiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9yZWxhdGlvbi8xNDg4MzgjbWFwPTIvMjAuNi8tODUuOCJ9LCJwb3B1bGF0aW9uIjozMjk0ODQxMjMsImdpbmkiOnsiMjAxOCI6NDEuNH0sImZpZmEiOiJVU0EiLCJjYXIiOnsic2lnbnMiOlsiVVNBIl0sInNpZGUiOiJyaWdodCJ9LCJ0aW1lem9uZXMiOlsiVVRDLTEyOjAwIiwiVVRDLTExOjAwIiwiVVRDLTEwOjAwIiwiVVRDLTA5OjAwIiwiVVRDLTA4OjAwIiwiVVRDLTA3OjAwIiwiVVRDLTA2OjAwIiwiVVRDLTA1OjAwIiwiVVRDLTA0OjAwIiwiVVRDKzEwOjAwIiwiVVRDKzEyOjAwIl0sImNvbnRpbmVudHMiOlsiTm9ydGggQW1lcmljYSJdLCJmbGFncyI6eyJwbmciOiJodHRwczovL2ZsYWdjZG4uY29tL3czMjAvdXMucG5nIiwic3ZnIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS91cy5zdmcifSwiY29hdE9mQXJtcyI6eyJwbmciOiJodHRwczovL21haW5mYWN0cy5jb20vbWVkaWEvaW1hZ2VzL2NvYXRzX29mX2FybXMvdXMucG5nIiwic3ZnIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL3VzLnN2ZyJ9LCJzdGFydE9mV2VlayI6InN1bmRheSIsImNhcGl0YWxJbmZvIjp7ImxhdGxuZyI6WzM4Ljg5LC03Ny4wNV19LCJwb3N0YWxDb2RlIjp7ImZvcm1hdCI6IiMjIyMjLSMjIyMiLCJyZWdleCI6Il5cXGR7NX0oLVxcZHs0fSk/JCJ9fV0\u003d",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 2338073700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User submits GET request to \"countryNameURL\" for \"USA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 200"
+            ],
+            "result": {
+              "duration": 4839800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Capital City: [\"Washington, D.C.\"]",
+              "Expected Capital City: Washington"
+            ],
+            "result": {
+              "duration": 65275400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates capital city is \"Washington\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Washington\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_capital_city_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PositiveTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-16T01:12:30.041Z",
+        "before": [
+          {
+            "result": {
+              "duration": 69400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Positive Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;positive-sceario:-get-capital-city-with-country-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "W3sibmFtZSI6eyJjb21tb24iOiJDYW5hZGEiLCJvZmZpY2lhbCI6IkNhbmFkYSIsIm5hdGl2ZU5hbWUiOnsiZW5nIjp7Im9mZmljaWFsIjoiQ2FuYWRhIiwiY29tbW9uIjoiQ2FuYWRhIn0sImZyYSI6eyJvZmZpY2lhbCI6IkNhbmFkYSIsImNvbW1vbiI6IkNhbmFkYSJ9fX0sInRsZCI6WyIuY2EiXSwiY2NhMiI6IkNBIiwiY2NuMyI6IjEyNCIsImNjYTMiOiJDQU4iLCJjaW9jIjoiQ0FOIiwiaW5kZXBlbmRlbnQiOnRydWUsInN0YXR1cyI6Im9mZmljaWFsbHktYXNzaWduZWQiLCJ1bk1lbWJlciI6dHJ1ZSwiY3VycmVuY2llcyI6eyJDQUQiOnsibmFtZSI6IkNhbmFkaWFuIGRvbGxhciIsInN5bWJvbCI6IiQifX0sImlkZCI6eyJyb290IjoiKzEiLCJzdWZmaXhlcyI6WyIiXX0sImNhcGl0YWwiOlsiT3R0YXdhIl0sImFsdFNwZWxsaW5ncyI6WyJDQSJdLCJyZWdpb24iOiJBbWVyaWNhcyIsInN1YnJlZ2lvbiI6Ik5vcnRoIEFtZXJpY2EiLCJsYW5ndWFnZXMiOnsiZW5nIjoiRW5nbGlzaCIsImZyYSI6IkZyZW5jaCJ9LCJ0cmFuc2xhdGlvbnMiOnsiYXJhIjp7Im9mZmljaWFsIjoi2YPZhtiv2KciLCJjb21tb24iOiLZg9mG2K/YpyJ9LCJicmUiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwiY2VzIjp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImN5bSI6eyJvZmZpY2lhbCI6IkNhbmFkYSIsImNvbW1vbiI6IkNhbmFkYSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwiZXN0Ijp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImZpbiI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJmcmEiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwiaHJ2Ijp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sImh1biI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJpdGEiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwianBuIjp7Im9mZmljaWFsIjoi44Kr44OK44OAIiwiY29tbW9uIjoi44Kr44OK44OAIn0sImtvciI6eyJvZmZpY2lhbCI6Iuy6kOuCmOuLpCIsImNvbW1vbiI6Iuy6kOuCmOuLpCJ9LCJubGQiOnsib2ZmaWNpYWwiOiJDYW5hZGEiLCJjb21tb24iOiJDYW5hZGEifSwicGVyIjp7Im9mZmljaWFsIjoi2qnYp9mG2KfYr9inIiwiY29tbW9uIjoi2qnYp9mG2KfYr9inIn0sInBvbCI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJDYW5hZMOhIiwiY29tbW9uIjoiQ2FuYWTDoSJ9LCJydXMiOnsib2ZmaWNpYWwiOiLQmtCw0L3QsNC00LAiLCJjb21tb24iOiLQmtCw0L3QsNC00LAifSwic2xrIjp7Im9mZmljaWFsIjoiS2FuYWRhIiwiY29tbW9uIjoiS2FuYWRhIn0sInNwYSI6eyJvZmZpY2lhbCI6IkNhbmFkw6EiLCJjb21tb24iOiJDYW5hZMOhIn0sInN3ZSI6eyJvZmZpY2lhbCI6IkthbmFkYSIsImNvbW1vbiI6IkthbmFkYSJ9LCJ0dXIiOnsib2ZmaWNpYWwiOiJLYW5hZGEiLCJjb21tb24iOiJLYW5hZGEifSwidXJkIjp7Im9mZmljaWFsIjoi2qnbjNmG24zaiNinIiwiY29tbW9uIjoi2qnbjNmG24zaiNinIn0sInpobyI6eyJvZmZpY2lhbCI6IuWKoOaLv+WkpyIsImNvbW1vbiI6IuWKoOaLv+WkpyJ9fSwibGF0bG5nIjpbNjAuMCwtOTUuMF0sImxhbmRsb2NrZWQiOmZhbHNlLCJib3JkZXJzIjpbIlVTQSJdLCJhcmVhIjo5OTg0NjcwLjAsImRlbW9ueW1zIjp7ImVuZyI6eyJmIjoiQ2FuYWRpYW4iLCJtIjoiQ2FuYWRpYW4ifSwiZnJhIjp7ImYiOiJDYW5hZGllbm5lIiwibSI6IkNhbmFkaWVuIn19LCJmbGFnIjoiXHVEODNDXHVEREU4XHVEODNDXHVEREU2IiwibWFwcyI6eyJnb29nbGVNYXBzIjoiaHR0cHM6Ly9nb28uZ2wvbWFwcy9qbUVWTHVncmVlcWlaWHhiQSIsIm9wZW5TdHJlZXRNYXBzIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvcmVsYXRpb24vMTQyODEyNSJ9LCJwb3B1bGF0aW9uIjozODAwNTIzOCwiZ2luaSI6eyIyMDE3IjozMy4zfSwiZmlmYSI6IkNBTiIsImNhciI6eyJzaWducyI6WyJDRE4iXSwic2lkZSI6InJpZ2h0In0sInRpbWV6b25lcyI6WyJVVEMtMDg6MDAiLCJVVEMtMDc6MDAiLCJVVEMtMDY6MDAiLCJVVEMtMDU6MDAiLCJVVEMtMDQ6MDAiLCJVVEMtMDM6MzAiXSwiY29udGluZW50cyI6WyJOb3J0aCBBbWVyaWNhIl0sImZsYWdzIjp7InBuZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vdzMyMC9jYS5wbmciLCJzdmciOiJodHRwczovL2ZsYWdjZG4uY29tL2NhLnN2ZyJ9LCJjb2F0T2ZBcm1zIjp7InBuZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9jYS5wbmciLCJzdmciOiJodHRwczovL21haW5mYWN0cy5jb20vbWVkaWEvaW1hZ2VzL2NvYXRzX29mX2FybXMvY2Euc3ZnIn0sInN0YXJ0T2ZXZWVrIjoic3VuZGF5IiwiY2FwaXRhbEluZm8iOnsibGF0bG5nIjpbNDUuNDIsLTc1LjddfSwicG9zdGFsQ29kZSI6eyJmb3JtYXQiOiJAI0AgI0AjIiwicmVnZXgiOiJeKFtBQkNFR0hKS0xNTlBSU1RWWFldXFxkW0FCQ0VHSEpLTE1OUFJTVFZXWFlaXSkgPyhcXGRbQUJDRUdISktMTU5QUlNUVldYWVpdXFxkKSQgIn19XQ\u003d\u003d",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 217691099,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User submits GET request to \"countryNameURL\" for \"Canada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Canada\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 200"
+            ],
+            "result": {
+              "duration": 425400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Capital City: [\"Ottawa\"]",
+              "Expected Capital City: Ottawa"
+            ],
+            "result": {
+              "duration": 1496299,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates capital city is \"Ottawa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ottawa\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_capital_city_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PositiveTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-16T01:12:30.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 54000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Positive Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;positive-sceario:-get-capital-city-with-country-name;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "W3sibmFtZSI6eyJjb21tb24iOiJNZXhpY28iLCJvZmZpY2lhbCI6IlVuaXRlZCBNZXhpY2FuIFN0YXRlcyIsIm5hdGl2ZU5hbWUiOnsic3BhIjp7Im9mZmljaWFsIjoiRXN0YWRvcyBVbmlkb3MgTWV4aWNhbm9zIiwiY29tbW9uIjoiTcOpeGljbyJ9fX0sInRsZCI6WyIubXgiXSwiY2NhMiI6Ik1YIiwiY2NuMyI6IjQ4NCIsImNjYTMiOiJNRVgiLCJjaW9jIjoiTUVYIiwiaW5kZXBlbmRlbnQiOnRydWUsInN0YXR1cyI6Im9mZmljaWFsbHktYXNzaWduZWQiLCJ1bk1lbWJlciI6dHJ1ZSwiY3VycmVuY2llcyI6eyJNWE4iOnsibmFtZSI6Ik1leGljYW4gcGVzbyIsInN5bWJvbCI6IiQifX0sImlkZCI6eyJyb290IjoiKzUiLCJzdWZmaXhlcyI6WyIyIl19LCJjYXBpdGFsIjpbIk1leGljbyBDaXR5Il0sImFsdFNwZWxsaW5ncyI6WyJNWCIsIk1leGljYW5vcyIsIlVuaXRlZCBNZXhpY2FuIFN0YXRlcyIsIkVzdGFkb3MgVW5pZG9zIE1leGljYW5vcyJdLCJyZWdpb24iOiJBbWVyaWNhcyIsInN1YnJlZ2lvbiI6Ik5vcnRoIEFtZXJpY2EiLCJsYW5ndWFnZXMiOnsic3BhIjoiU3BhbmlzaCJ9LCJ0cmFuc2xhdGlvbnMiOnsiYXJhIjp7Im9mZmljaWFsIjoi2KfZhNmI2YTYp9mK2KfYqiDYp9mE2YXYqtit2K/YqSDYp9mE2YXZg9iz2YrZg9mK2KkiLCJjb21tb24iOiLYp9mE2YXYs9mD2YrZgyJ9LCJicmUiOnsib2ZmaWNpYWwiOiJTdGFkb8O5LVVuYW5ldCBNZWMnaGlrbyIsImNvbW1vbiI6Ik1lYydoaWtvIn0sImNlcyI6eyJvZmZpY2lhbCI6IlNwb2plbsOpIHN0w6F0eSBtZXhpY2vDqSIsImNvbW1vbiI6Ik1leGlrbyJ9LCJjeW0iOnsib2ZmaWNpYWwiOiJVbml0ZWQgTWV4aWNhbiBTdGF0ZXMiLCJjb21tb24iOiJNZXhpY28ifSwiZGV1Ijp7Im9mZmljaWFsIjoiVmVyZWluaWd0ZSBNZXhpa2FuaXNjaGUgU3RhYXRlbiIsImNvbW1vbiI6Ik1leGlrbyJ9LCJlc3QiOnsib2ZmaWNpYWwiOiJNZWhoaWtvIMOcaGVuZHJpaWdpZCIsImNvbW1vbiI6Ik1laGhpa28ifSwiZmluIjp7Im9mZmljaWFsIjoiTWVrc2lrb24geWhkeXN2YWxsYXQiLCJjb21tb24iOiJNZWtzaWtvIn0sImZyYSI6eyJvZmZpY2lhbCI6IsOJdGF0cy1VbmlzIGR1IE1leGlxdWUiLCJjb21tb24iOiJNZXhpcXVlIn0sImhydiI6eyJvZmZpY2lhbCI6IlNqZWRpbmplbmUgTWVrc2nEjWtlIERyxb5hdmUiLCJjb21tb24iOiJNZWtzaWtvIn0sImh1biI6eyJvZmZpY2lhbCI6Ik1leGlrw7NpIEVneWVzw7xsdCDDgWxsYW1vayIsImNvbW1vbiI6Ik1leGlrw7MifSwiaXRhIjp7Im9mZmljaWFsIjoiU3RhdGkgVW5pdGkgZGVsIE1lc3NpY28iLCJjb21tb24iOiJNZXNzaWNvIn0sImpwbiI6eyJvZmZpY2lhbCI6IuODoeOCreOCt+OCs+WQiOihhuWbvSIsImNvbW1vbiI6IuODoeOCreOCt+OCsyJ9LCJrb3IiOnsib2ZmaWNpYWwiOiLrqZXsi5zsvZQg7ZWp7KSR6rWtIiwiY29tbW9uIjoi66mV7Iuc7L2UIn0sIm5sZCI6eyJvZmZpY2lhbCI6IlZlcmVuaWdkZSBNZXhpY2FhbnNlIFN0YXRlbiIsImNvbW1vbiI6Ik1leGljbyJ9LCJwZXIiOnsib2ZmaWNpYWwiOiLYp9uM2KfZhNin2Kog2YXYqtit2K8g2YXaqdiy24zaqSIsImNvbW1vbiI6ItmF2qnYstuM2qkifSwicG9sIjp7Im9mZmljaWFsIjoiTWVrc3lrYcWEc2tpZSBTdGFueSBaamVkbm9jem9uZSIsImNvbW1vbiI6Ik1la3N5ayJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJFc3RhZG9zIFVuaWRvcyBNZXhpY2Fub3MiLCJjb21tb24iOiJNw6l4aWNvIn0sInJ1cyI6eyJvZmZpY2lhbCI6ItCc0LXQutGB0LjQutCw0L3RgdC60LjQtSDQodC+0LXQtNC40L3RkdC90L3Ri9C1INCo0YLQsNGC0YsiLCJjb21tb24iOiLQnNC10LrRgdC40LrQsCJ9LCJzbGsiOnsib2ZmaWNpYWwiOiJTcG9qZW7DqSDFoXTDocWheSBtZXhpY2vDqSIsImNvbW1vbiI6Ik1leGlrbyJ9LCJzcGEiOnsib2ZmaWNpYWwiOiJFc3RhZG9zIFVuaWRvcyBNZXhpY2Fub3MiLCJjb21tb24iOiJNw6l4aWNvIn0sInN3ZSI6eyJvZmZpY2lhbCI6Ik1leGlrb3MgZsO2cmVudGEgc3RhdGVyIiwiY29tbW9uIjoiTWV4aWtvIn0sInR1ciI6eyJvZmZpY2lhbCI6IkJpcmxlxZ9payBNZWtzaWthIERldmxldGxlcmkiLCJjb21tb24iOiJNZWtzaWthIn0sInVyZCI6eyJvZmZpY2lhbCI6Itix24zYp9iz2Krbgdin2KbbkiDZhdiq2K3Yr9uBINmF24zaqdiz24zaqdmIIiwiY29tbW9uIjoi2YXbjNqp2LPbjNqp2YgifSwiemhvIjp7Im9mZmljaWFsIjoi5aKo6KW/5ZOl5ZCI5LyX5Zu9IiwiY29tbW9uIjoi5aKo6KW/5ZOlIn19LCJsYXRsbmciOlsyMy4wLC0xMDIuMF0sImxhbmRsb2NrZWQiOmZhbHNlLCJib3JkZXJzIjpbIkJMWiIsIkdUTSIsIlVTQSJdLCJhcmVhIjoxOTY0Mzc1LjAsImRlbW9ueW1zIjp7ImVuZyI6eyJmIjoiTWV4aWNhbiIsIm0iOiJNZXhpY2FuIn0sImZyYSI6eyJmIjoiTWV4aWNhaW5lIiwibSI6Ik1leGljYWluIn19LCJmbGFnIjoiXHVEODNDXHVEREYyXHVEODNDXHVEREZEIiwibWFwcyI6eyJnb29nbGVNYXBzIjoiaHR0cHM6Ly9nb28uZ2wvbWFwcy9zNWc3aW1OUE1ERWVQeHpiQSIsIm9wZW5TdHJlZXRNYXBzIjoiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvcmVsYXRpb24vMTE0Njg2In0sInBvcHVsYXRpb24iOjEyODkzMjc1MywiZ2luaSI6eyIyMDE4Ijo0NS40fSwiZmlmYSI6Ik1FWCIsImNhciI6eyJzaWducyI6WyJNRVgiXSwic2lkZSI6InJpZ2h0In0sInRpbWV6b25lcyI6WyJVVEMtMDg6MDAiLCJVVEMtMDc6MDAiLCJVVEMtMDY6MDAiXSwiY29udGluZW50cyI6WyJOb3J0aCBBbWVyaWNhIl0sImZsYWdzIjp7InBuZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vdzMyMC9teC5wbmciLCJzdmciOiJodHRwczovL2ZsYWdjZG4uY29tL214LnN2ZyJ9LCJjb2F0T2ZBcm1zIjp7InBuZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9teC5wbmciLCJzdmciOiJodHRwczovL21haW5mYWN0cy5jb20vbWVkaWEvaW1hZ2VzL2NvYXRzX29mX2FybXMvbXguc3ZnIn0sInN0YXJ0T2ZXZWVrIjoibW9uZGF5IiwiY2FwaXRhbEluZm8iOnsibGF0bG5nIjpbMTkuNDMsLTk5LjEzXX0sInBvc3RhbENvZGUiOnsiZm9ybWF0IjoiIyMjIyMiLCJyZWdleCI6Il4oXFxkezV9KSQifX1d",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 192781100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User submits GET request to \"countryNameURL\" for \"Mexico\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Mexico\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 200"
+            ],
+            "result": {
+              "duration": 520400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User validates response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Capital City: [\"Mexico City\"]",
+              "Expected Capital City: Mexico City"
+            ],
+            "result": {
+              "duration": 1404900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User validates capital city is \"Mexico City\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mexico City\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_capital_city_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PositiveTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-16T01:12:30.461Z",
+        "before": [
+          {
+            "result": {
+              "duration": 64899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Nagative Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;nagative-sceario:-get-capital-city-with-country-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "eyJzdGF0dXMiOjQwNCwibWVzc2FnZSI6Ik5vdCBGb3VuZCJ9",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 191506800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User submits GET request to \"countryNameURL\" for \"Whatever\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Whatever\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 404"
+            ],
+            "result": {
+              "duration": 407801,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User validates response status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Error Message: Not Found",
+              "Expected Error Message: Not Found"
+            ],
+            "result": {
+              "duration": 946399,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User validates error message is \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_error_message_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-16T01:12:30.658Z",
+        "before": [
+          {
+            "result": {
+              "duration": 38700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Nagative Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;nagative-sceario:-get-capital-city-with-country-name;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "eyJzdGF0dXMiOjQwNCwibWVzc2FnZSI6Ik5vdCBGb3VuZCJ9",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 246504699,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User submits GET request to \"countryNameURL\" for \"Somewhere\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Somewhere\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 404"
+            ],
+            "result": {
+              "duration": 1293600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User validates response status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Error Message: Not Found",
+              "Expected Error Message: Not Found"
+            ],
+            "result": {
+              "duration": 865601,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User validates error message is \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_error_message_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-16T01:12:30.910Z",
+        "before": [
+          {
+            "result": {
+              "duration": 44000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CountriesAPISteps.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Nagative Sceario: Get Capital City with Country Name",
+        "description": "",
+        "id": "capital-city-of-countries;nagative-sceario:-get-capital-city-with-country-name;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "embeddings": [
+              {
+                "data": "eyJzdGF0dXMiOjQwNCwibWVzc2FnZSI6Ik5vdCBGb3VuZCJ9",
+                "mime_type": "application/json"
+              }
+            ],
+            "result": {
+              "duration": 190623800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User submits GET request to \"countryNameURL\" for \"Anuwhere\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countryNameURL\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Anuwhere\"",
+                  "offset": 49
+                }
+              ],
+              "location": "CountriesAPISteps.user_submits_GET_request_to_for(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Status Code: 404"
+            ],
+            "result": {
+              "duration": 481200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User validates response status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 39
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_response_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Actual Error Message: Not Found",
+              "Expected Error Message: Not Found"
+            ],
+            "result": {
+              "duration": 957299,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User validates error message is \"Not Found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Not Found\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CountriesAPISteps.user_validates_error_message_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NegativeTest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Capital city of Countries",
+    "description": "",
+    "id": "capital-city-of-countries",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CountriesAPI.feature",
+    "tags": []
+  }
+]

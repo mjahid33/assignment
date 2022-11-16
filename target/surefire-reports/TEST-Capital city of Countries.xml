@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Capital city of Countries" time="3.77" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\cahid\OneDrive\Desktop\Countries\target\test-classes;C:\Users\cahid\OneDrive\Desktop\Countries\target\classes;C:\Users\cahid\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\cahid\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\cahid\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\cahid\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\cahid\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\cahid\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\cahid\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\cahid\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\cahid\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\cahid\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cahid\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cahid\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\cahid\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\cahid\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\cahid\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\cahid\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\cahid\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-java\4.8.1\cucumber-java-4.8.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-core\4.8.1\cucumber-core-4.8.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\cahid\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\cahid\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\cahid\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\cahid\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-junit\4.8.1\cucumber-junit-4.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\cahid\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\cahid\AppData\Local\Temp\surefire15973195274672533794\surefirebooter2806542671081892447.jar C:\Users\cahid\AppData\Local\Temp\surefire15973195274672533794 2022-11-15T18-44-16_947-jvmRun1 surefire15396046938001492441tmp surefire_09500431541293614901tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\cahid\OneDrive\Desktop\Countries\target\test-classes;C:\Users\cahid\OneDrive\Desktop\Countries\target\classes;C:\Users\cahid\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\cahid\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\cahid\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\cahid\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\cahid\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\cahid\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\cahid\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\cahid\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\cahid\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\cahid\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\cahid\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\cahid\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cahid\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cahid\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\cahid\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\cahid\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\cahid\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\cahid\.m2\repository\org\slf4j\slf4j-api\1.7.33\slf4j-api-1.7.33.jar;C:\Users\cahid\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\cahid\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-java\4.8.1\cucumber-java-4.8.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-core\4.8.1\cucumber-core-4.8.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\cahid\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\cahid\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\cahid\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\cahid\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\cahid\.m2\repository\io\cucumber\cucumber-junit\4.8.1\cucumber-junit-4.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\cahid"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="C:\Users\cahid\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\cahid\OneDrive\Desktop\Countries"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\cahid\AppData\Local\Temp\surefire15973195274672533794\surefirebooter2806542671081892447.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.4+8"/>
+    <property name="user.name" value="cahid"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.4+8"/>
+    <property name="localRepository" value="C:\Users\cahid\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\cahid\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.4"/>
+    <property name="user.dir" value="C:\Users\cahid\OneDrive\Desktop\Countries"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\cahid\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/cahid/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047/jre/bin/server;C:/Users/cahid/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\cahid\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Users\cahid\AppData\Local\Microsoft\WindowsApps;;C:\Windows\System32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.4+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Positive Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="2.128">
+    <system-out><![CDATA[Feature: Capital city of Countries
+
+
+
+  @PositiveTest @regression
+
+  Scenario Outline: Positive Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:4
+
+    Given User submits GET request to "countryNameURL" for "<countryName>"
+
+    And User validates response status code is 200
+
+    Then User validates capital city is "<capitalCity>"
+
+
+
+    Examples: 
+
+
+
+  @PositiveTest @regression
+
+  Scenario Outline: Positive Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:12
+
+    Given User submits GET request to "countryNameURL" for "USA"         # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 200
+
+    And User validates response status code is 200                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Capital City: ["Washington, D.C."]
+
+Expected Capital City: Washington
+
+    Then User validates capital city is "Washington"                     # CountriesAPISteps.user_validates_capital_city_is(String)
+
+
+
+  @PositiveTest @regression
+
+  Scenario Outline: Positive Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:13
+
+    Given User submits GET request to "countryNameURL" for "Canada"      # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 200
+
+    And User validates response status code is 200                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Capital City: ["Ottawa"]
+
+Expected Capital City: Ottawa
+
+    Then User validates capital city is "Ottawa"                         # CountriesAPISteps.user_validates_capital_city_is(String)
+
+
+
+  @PositiveTest @regression
+
+  Scenario Outline: Positive Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:14
+
+    Given User submits GET request to "countryNameURL" for "Mexico"      # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 200
+
+    And User validates response status code is 200                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Capital City: ["Mexico City"]
+
+Expected Capital City: Mexico City
+
+    Then User validates capital city is "Mexico City"                    # CountriesAPISteps.user_validates_capital_city_is(String)
+
+
+
+  @NegativeTest @regression
+
+  Scenario Outline: Nagative Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:19
+
+    Given User submits GET request to "countryNameURL" for "<countryName>"
+
+    And User validates response status code is 404
+
+    Then User validates error message is "Not Found"
+
+
+
+    Examples: 
+
+
+
+  @NegativeTest @regression
+
+  Scenario Outline: Nagative Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:25
+
+    Given User submits GET request to "countryNameURL" for "Whatever"    # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 404
+
+    And User validates response status code is 404                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Error Message: Not Found
+
+Expected Error Message: Not Found
+
+    Then User validates error message is "Not Found"                     # CountriesAPISteps.user_validates_error_message_is(String)
+
+
+
+  @NegativeTest @regression
+
+  Scenario Outline: Nagative Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:26
+
+    Given User submits GET request to "countryNameURL" for "Somewhere"   # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 404
+
+    And User validates response status code is 404                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Error Message: Not Found
+
+Expected Error Message: Not Found
+
+    Then User validates error message is "Not Found"                     # CountriesAPISteps.user_validates_error_message_is(String)
+
+
+
+  @NegativeTest @regression
+
+  Scenario Outline: Nagative Sceario: Get Capital City with Country Name # src/test/resources/features/CountriesAPI.feature:27
+
+    Given User submits GET request to "countryNameURL" for "Anuwhere"    # CountriesAPISteps.user_submits_GET_request_to_for(String,String)
+
+Status Code: 404
+
+    And User validates response status code is 404                       # CountriesAPISteps.user_validates_response_status_code_is(int)
+
+Actual Error Message: Not Found
+
+Expected Error Message: Not Found
+
+    Then User validates error message is "Not Found"                     # CountriesAPISteps.user_validates_error_message_is(String)
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Positive Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="0.456"/>
+  <testcase name="Positive Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="0.278"/>
+  <testcase name="Nagative Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="0.304"/>
+  <testcase name="Nagative Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="0.287"/>
+  <testcase name="Nagative Sceario: Get Capital City with Country Name" classname="Capital city of Countries" time="0.315"/>
+</testsuite>

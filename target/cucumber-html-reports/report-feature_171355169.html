@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Feature: Capital city of Countries</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+              <td>1</td>
+            <td>15 Nov 2022, 18:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Capital city of Countries</td>
+          <td      class="passed"    >18</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">18</td>
+
+          <td  class="passed"    >6</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td class="duration" data-value="3762949502">3.762</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Capital city of Countries</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_940024458.html">@PositiveTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">2.123</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Positive Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;USA&quot;</span></span>
+  
+  <span class="lead-duration duration">2.059</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_463474355.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-4" class="collapse collapsable-details">
+      <pre class="embedding-content">[{&quot;name&quot;:{&quot;common&quot;:&quot;United States&quot;,&quot;official&quot;:&quot;United States of America&quot;,&quot;nativeName&quot;:{&quot;eng&quot;:{&quot;official&quot;:&quot;United States of America&quot;,&quot;common&quot;:&quot;United States&quot;}}},&quot;tld&quot;:[&quot;.us&quot;],&quot;cca2&quot;:&quot;US&quot;,&quot;ccn3&quot;:&quot;840&quot;,&quot;cca3&quot;:&quot;USA&quot;,&quot;cioc&quot;:&quot;USA&quot;,&quot;independent&quot;:true,&quot;status&quot;:&quot;officially-assigned&quot;,&quot;unMember&quot;:true,&quot;currencies&quot;:{&quot;USD&quot;:{&quot;name&quot;:&quot;United States dollar&quot;,&quot;symbol&quot;:&quot;$&quot;}},&quot;idd&quot;:{&quot;root&quot;:&quot;+1&quot;,&quot;suffixes&quot;:[&quot;201&quot;,&quot;202&quot;,&quot;203&quot;,&quot;205&quot;,&quot;206&quot;,&quot;207&quot;,&quot;208&quot;,&quot;209&quot;,&quot;210&quot;,&quot;212&quot;,&quot;213&quot;,&quot;214&quot;,&quot;215&quot;,&quot;216&quot;,&quot;217&quot;,&quot;218&quot;,&quot;219&quot;,&quot;220&quot;,&quot;224&quot;,&quot;225&quot;,&quot;227&quot;,&quot;228&quot;,&quot;229&quot;,&quot;231&quot;,&quot;234&quot;,&quot;239&quot;,&quot;240&quot;,&quot;248&quot;,&quot;251&quot;,&quot;252&quot;,&quot;253&quot;,&quot;254&quot;,&quot;256&quot;,&quot;260&quot;,&quot;262&quot;,&quot;267&quot;,&quot;269&quot;,&quot;270&quot;,&quot;272&quot;,&quot;274&quot;,&quot;276&quot;,&quot;281&quot;,&quot;283&quot;,&quot;301&quot;,&quot;302&quot;,&quot;303&quot;,&quot;304&quot;,&quot;305&quot;,&quot;307&quot;,&quot;308&quot;,&quot;309&quot;,&quot;310&quot;,&quot;312&quot;,&quot;313&quot;,&quot;314&quot;,&quot;315&quot;,&quot;316&quot;,&quot;317&quot;,&quot;318&quot;,&quot;319&quot;,&quot;320&quot;,&quot;321&quot;,&quot;323&quot;,&quot;325&quot;,&quot;327&quot;,&quot;330&quot;,&quot;331&quot;,&quot;334&quot;,&quot;336&quot;,&quot;337&quot;,&quot;339&quot;,&quot;346&quot;,&quot;347&quot;,&quot;351&quot;,&quot;352&quot;,&quot;360&quot;,&quot;361&quot;,&quot;364&quot;,&quot;380&quot;,&quot;385&quot;,&quot;386&quot;,&quot;401&quot;,&quot;402&quot;,&quot;404&quot;,&quot;405&quot;,&quot;406&quot;,&quot;407&quot;,&quot;408&quot;,&quot;409&quot;,&quot;410&quot;,&quot;412&quot;,&quot;413&quot;,&quot;414&quot;,&quot;415&quot;,&quot;417&quot;,&quot;419&quot;,&quot;423&quot;,&quot;424&quot;,&quot;425&quot;,&quot;430&quot;,&quot;432&quot;,&quot;434&quot;,&quot;435&quot;,&quot;440&quot;,&quot;442&quot;,&quot;443&quot;,&quot;447&quot;,&quot;458&quot;,&quot;463&quot;,&quot;464&quot;,&quot;469&quot;,&quot;470&quot;,&quot;475&quot;,&quot;478&quot;,&quot;479&quot;,&quot;480&quot;,&quot;484&quot;,&quot;501&quot;,&quot;502&quot;,&quot;503&quot;,&quot;504&quot;,&quot;505&quot;,&quot;507&quot;,&quot;508&quot;,&quot;509&quot;,&quot;510&quot;,&quot;512&quot;,&quot;513&quot;,&quot;515&quot;,&quot;516&quot;,&quot;517&quot;,&quot;518&quot;,&quot;520&quot;,&quot;530&quot;,&quot;531&quot;,&quot;534&quot;,&quot;539&quot;,&quot;540&quot;,&quot;541&quot;,&quot;551&quot;,&quot;559&quot;,&quot;561&quot;,&quot;562&quot;,&quot;563&quot;,&quot;564&quot;,&quot;567&quot;,&quot;570&quot;,&quot;571&quot;,&quot;573&quot;,&quot;574&quot;,&quot;575&quot;,&quot;580&quot;,&quot;585&quot;,&quot;586&quot;,&quot;601&quot;,&quot;602&quot;,&quot;603&quot;,&quot;605&quot;,&quot;606&quot;,&quot;607&quot;,&quot;608&quot;,&quot;609&quot;,&quot;610&quot;,&quot;612&quot;,&quot;614&quot;,&quot;615&quot;,&quot;616&quot;,&quot;617&quot;,&quot;618&quot;,&quot;619&quot;,&quot;620&quot;,&quot;623&quot;,&quot;626&quot;,&quot;628&quot;,&quot;629&quot;,&quot;630&quot;,&quot;631&quot;,&quot;636&quot;,&quot;641&quot;,&quot;646&quot;,&quot;650&quot;,&quot;651&quot;,&quot;657&quot;,&quot;660&quot;,&quot;661&quot;,&quot;662&quot;,&quot;667&quot;,&quot;669&quot;,&quot;678&quot;,&quot;681&quot;,&quot;682&quot;,&quot;701&quot;,&quot;702&quot;,&quot;703&quot;,&quot;704&quot;,&quot;706&quot;,&quot;707&quot;,&quot;708&quot;,&quot;712&quot;,&quot;713&quot;,&quot;714&quot;,&quot;715&quot;,&quot;716&quot;,&quot;717&quot;,&quot;718&quot;,&quot;719&quot;,&quot;720&quot;,&quot;724&quot;,&quot;725&quot;,&quot;727&quot;,&quot;730&quot;,&quot;731&quot;,&quot;732&quot;,&quot;734&quot;,&quot;737&quot;,&quot;740&quot;,&quot;743&quot;,&quot;747&quot;,&quot;754&quot;,&quot;757&quot;,&quot;760&quot;,&quot;762&quot;,&quot;763&quot;,&quot;765&quot;,&quot;769&quot;,&quot;770&quot;,&quot;772&quot;,&quot;773&quot;,&quot;774&quot;,&quot;775&quot;,&quot;779&quot;,&quot;781&quot;,&quot;785&quot;,&quot;786&quot;,&quot;801&quot;,&quot;802&quot;,&quot;803&quot;,&quot;804&quot;,&quot;805&quot;,&quot;806&quot;,&quot;808&quot;,&quot;810&quot;,&quot;812&quot;,&quot;813&quot;,&quot;814&quot;,&quot;815&quot;,&quot;816&quot;,&quot;817&quot;,&quot;818&quot;,&quot;828&quot;,&quot;830&quot;,&quot;831&quot;,&quot;832&quot;,&quot;843&quot;,&quot;845&quot;,&quot;847&quot;,&quot;848&quot;,&quot;850&quot;,&quot;854&quot;,&quot;856&quot;,&quot;857&quot;,&quot;858&quot;,&quot;859&quot;,&quot;860&quot;,&quot;862&quot;,&quot;863&quot;,&quot;864&quot;,&quot;865&quot;,&quot;870&quot;,&quot;872&quot;,&quot;878&quot;,&quot;901&quot;,&quot;903&quot;,&quot;904&quot;,&quot;906&quot;,&quot;907&quot;,&quot;908&quot;,&quot;909&quot;,&quot;910&quot;,&quot;912&quot;,&quot;913&quot;,&quot;914&quot;,&quot;915&quot;,&quot;916&quot;,&quot;917&quot;,&quot;918&quot;,&quot;919&quot;,&quot;920&quot;,&quot;925&quot;,&quot;928&quot;,&quot;929&quot;,&quot;930&quot;,&quot;931&quot;,&quot;934&quot;,&quot;936&quot;,&quot;937&quot;,&quot;938&quot;,&quot;940&quot;,&quot;941&quot;,&quot;947&quot;,&quot;949&quot;,&quot;951&quot;,&quot;952&quot;,&quot;954&quot;,&quot;956&quot;,&quot;959&quot;,&quot;970&quot;,&quot;971&quot;,&quot;972&quot;,&quot;973&quot;,&quot;975&quot;,&quot;978&quot;,&quot;979&quot;,&quot;980&quot;,&quot;984&quot;,&quot;985&quot;,&quot;989&quot;]},&quot;capital&quot;:[&quot;Washington, D.C.&quot;],&quot;altSpellings&quot;:[&quot;US&quot;,&quot;USA&quot;,&quot;United States of America&quot;],&quot;region&quot;:&quot;Americas&quot;,&quot;subregion&quot;:&quot;North America&quot;,&quot;languages&quot;:{&quot;eng&quot;:&quot;English&quot;},&quot;translations&quot;:{&quot;ara&quot;:{&quot;official&quot;:&quot;???????? ??????? ?????????&quot;,&quot;common&quot;:&quot;???????? ???????&quot;},&quot;bre&quot;:{&quot;official&quot;:&quot;Stado&#65533;-Unanet Amerika&quot;,&quot;common&quot;:&quot;Stado&#65533;-Unanet&quot;},&quot;ces&quot;:{&quot;official&quot;:&quot;Spojen&#65533; st&#65533;ty americk&#65533;&quot;,&quot;common&quot;:&quot;Spojen&#65533; st&#65533;ty&quot;},&quot;cym&quot;:{&quot;official&quot;:&quot;United States of America&quot;,&quot;common&quot;:&quot;United States&quot;},&quot;deu&quot;:{&quot;official&quot;:&quot;Vereinigte Staaten von Amerika&quot;,&quot;common&quot;:&quot;Vereinigte Staaten&quot;},&quot;est&quot;:{&quot;official&quot;:&quot;Ameerika &#65533;hendriigid&quot;,&quot;common&quot;:&quot;Ameerika &#65533;hendriigid&quot;},&quot;fin&quot;:{&quot;official&quot;:&quot;Amerikan yhdysvallat&quot;,&quot;common&quot;:&quot;Yhdysvallat&quot;},&quot;fra&quot;:{&quot;official&quot;:&quot;Les &#65533;tats-unis d'Am&#65533;rique&quot;,&quot;common&quot;:&quot;&#65533;tats-Unis&quot;},&quot;hrv&quot;:{&quot;official&quot;:&quot;Sjedinjene Dr&#65533;ave Amerike&quot;,&quot;common&quot;:&quot;Sjedinjene Ameri?ke Dr&#65533;ave&quot;},&quot;hun&quot;:{&quot;official&quot;:&quot;Amerikai Egyes&#65533;lt &#65533;llamok&quot;,&quot;common&quot;:&quot;Amerikai Egyes&#65533;lt &#65533;llamok&quot;},&quot;ita&quot;:{&quot;official&quot;:&quot;Stati Uniti d'America&quot;,&quot;common&quot;:&quot;Stati Uniti d'America&quot;},&quot;jpn&quot;:{&quot;official&quot;:&quot;???????&quot;,&quot;common&quot;:&quot;???????&quot;},&quot;kor&quot;:{&quot;official&quot;:&quot;???? ???&quot;,&quot;common&quot;:&quot;??&quot;},&quot;nld&quot;:{&quot;official&quot;:&quot;Verenigde Staten van Amerika&quot;,&quot;common&quot;:&quot;Verenigde Staten&quot;},&quot;per&quot;:{&quot;official&quot;:&quot;?????? ????? ??????&quot;,&quot;common&quot;:&quot;?????? ????? ??????&quot;},&quot;pol&quot;:{&quot;official&quot;:&quot;Stany Zjednoczone Ameryki&quot;,&quot;common&quot;:&quot;Stany Zjednoczone&quot;},&quot;por&quot;:{&quot;official&quot;:&quot;Estados Unidos da Am&#65533;rica&quot;,&quot;common&quot;:&quot;Estados Unidos&quot;},&quot;rus&quot;:{&quot;official&quot;:&quot;??????????? ????? ???????&quot;,&quot;common&quot;:&quot;??????????? ????? ???????&quot;},&quot;slk&quot;:{&quot;official&quot;:&quot;Spojen&#65533; &#65533;t&#65533;ty Americk&#65533;&quot;,&quot;common&quot;:&quot;Spojen&#65533; &#65533;t&#65533;ty americk&#65533;&quot;},&quot;spa&quot;:{&quot;official&quot;:&quot;Estados Unidos de Am&#65533;rica&quot;,&quot;common&quot;:&quot;Estados Unidos&quot;},&quot;swe&quot;:{&quot;official&quot;:&quot;Amerikas f&#65533;renta stater&quot;,&quot;common&quot;:&quot;USA&quot;},&quot;tur&quot;:{&quot;official&quot;:&quot;Amerika Birle?ik Devletleri&quot;,&quot;common&quot;:&quot;Amerika Birle?ik Devletleri&quot;},&quot;urd&quot;:{&quot;official&quot;:&quot;????????? ????? ??????&quot;,&quot;common&quot;:&quot;????????? ?????&quot;},&quot;zho&quot;:{&quot;official&quot;:&quot;??????&quot;,&quot;common&quot;:&quot;??&quot;}},&quot;latlng&quot;:[38.0,-97.0],&quot;landlocked&quot;:false,&quot;borders&quot;:[&quot;CAN&quot;,&quot;MEX&quot;],&quot;area&quot;:9372610.0,&quot;demonyms&quot;:{&quot;eng&quot;:{&quot;f&quot;:&quot;American&quot;,&quot;m&quot;:&quot;American&quot;},&quot;fra&quot;:{&quot;f&quot;:&quot;Am&#65533;ricaine&quot;,&quot;m&quot;:&quot;Am&#65533;ricain&quot;}},&quot;flag&quot;:&quot;\uD83C\uDDFA\uD83C\uDDF8&quot;,&quot;maps&quot;:{&quot;googleMaps&quot;:&quot;https://goo.gl/maps/e8M246zY4BSjkjAv6&quot;,&quot;openStreetMaps&quot;:&quot;https://www.openstreetmap.org/relation/148838#map=2/20.6/-85.8&quot;},&quot;population&quot;:329484123,&quot;gini&quot;:{&quot;2018&quot;:41.4},&quot;fifa&quot;:&quot;USA&quot;,&quot;car&quot;:{&quot;signs&quot;:[&quot;USA&quot;],&quot;side&quot;:&quot;right&quot;},&quot;timezones&quot;:[&quot;UTC-12:00&quot;,&quot;UTC-11:00&quot;,&quot;UTC-10:00&quot;,&quot;UTC-09:00&quot;,&quot;UTC-08:00&quot;,&quot;UTC-07:00&quot;,&quot;UTC-06:00&quot;,&quot;UTC-05:00&quot;,&quot;UTC-04:00&quot;,&quot;UTC+10:00&quot;,&quot;UTC+12:00&quot;],&quot;continents&quot;:[&quot;North America&quot;],&quot;flags&quot;:{&quot;png&quot;:&quot;https://flagcdn.com/w320/us.png&quot;,&quot;svg&quot;:&quot;https://flagcdn.com/us.svg&quot;},&quot;coatOfArms&quot;:{&quot;png&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/us.png&quot;,&quot;svg&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/us.svg&quot;},&quot;startOfWeek&quot;:&quot;sunday&quot;,&quot;capitalInfo&quot;:{&quot;latlng&quot;:[38.89,-77.05]},&quot;postalCode&quot;:{&quot;format&quot;:&quot;#####-####&quot;,&quot;regex&quot;:&quot;^\\d{5}(-\\d{4})?$&quot;}}]</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 200</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates capital city is <span class="argument">&quot;Washington&quot;</span></span>
+  
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-6">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-6" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Capital City: [&quot;Washington, D.C.&quot;]</p><p>Expected Capital City: Washington</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_940024458.html">@PositiveTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.455</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Positive Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;Canada&quot;</span></span>
+  
+  <span class="lead-duration duration">0.454</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_-1272809413.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-10" class="collapse collapsable-details">
+      <pre class="embedding-content">[{&quot;name&quot;:{&quot;common&quot;:&quot;Canada&quot;,&quot;official&quot;:&quot;Canada&quot;,&quot;nativeName&quot;:{&quot;eng&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;},&quot;fra&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;}}},&quot;tld&quot;:[&quot;.ca&quot;],&quot;cca2&quot;:&quot;CA&quot;,&quot;ccn3&quot;:&quot;124&quot;,&quot;cca3&quot;:&quot;CAN&quot;,&quot;cioc&quot;:&quot;CAN&quot;,&quot;independent&quot;:true,&quot;status&quot;:&quot;officially-assigned&quot;,&quot;unMember&quot;:true,&quot;currencies&quot;:{&quot;CAD&quot;:{&quot;name&quot;:&quot;Canadian dollar&quot;,&quot;symbol&quot;:&quot;$&quot;}},&quot;idd&quot;:{&quot;root&quot;:&quot;+1&quot;,&quot;suffixes&quot;:[&quot;&quot;]},&quot;capital&quot;:[&quot;Ottawa&quot;],&quot;altSpellings&quot;:[&quot;CA&quot;],&quot;region&quot;:&quot;Americas&quot;,&quot;subregion&quot;:&quot;North America&quot;,&quot;languages&quot;:{&quot;eng&quot;:&quot;English&quot;,&quot;fra&quot;:&quot;French&quot;},&quot;translations&quot;:{&quot;ara&quot;:{&quot;official&quot;:&quot;????&quot;,&quot;common&quot;:&quot;????&quot;},&quot;bre&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;ces&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;cym&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;},&quot;deu&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;est&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;fin&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;fra&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;},&quot;hrv&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;hun&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;ita&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;},&quot;jpn&quot;:{&quot;official&quot;:&quot;???&quot;,&quot;common&quot;:&quot;???&quot;},&quot;kor&quot;:{&quot;official&quot;:&quot;???&quot;,&quot;common&quot;:&quot;???&quot;},&quot;nld&quot;:{&quot;official&quot;:&quot;Canada&quot;,&quot;common&quot;:&quot;Canada&quot;},&quot;per&quot;:{&quot;official&quot;:&quot;??????&quot;,&quot;common&quot;:&quot;??????&quot;},&quot;pol&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;por&quot;:{&quot;official&quot;:&quot;Canad&#65533;&quot;,&quot;common&quot;:&quot;Canad&#65533;&quot;},&quot;rus&quot;:{&quot;official&quot;:&quot;??????&quot;,&quot;common&quot;:&quot;??????&quot;},&quot;slk&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;spa&quot;:{&quot;official&quot;:&quot;Canad&#65533;&quot;,&quot;common&quot;:&quot;Canad&#65533;&quot;},&quot;swe&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;tur&quot;:{&quot;official&quot;:&quot;Kanada&quot;,&quot;common&quot;:&quot;Kanada&quot;},&quot;urd&quot;:{&quot;official&quot;:&quot;??????&quot;,&quot;common&quot;:&quot;??????&quot;},&quot;zho&quot;:{&quot;official&quot;:&quot;???&quot;,&quot;common&quot;:&quot;???&quot;}},&quot;latlng&quot;:[60.0,-95.0],&quot;landlocked&quot;:false,&quot;borders&quot;:[&quot;USA&quot;],&quot;area&quot;:9984670.0,&quot;demonyms&quot;:{&quot;eng&quot;:{&quot;f&quot;:&quot;Canadian&quot;,&quot;m&quot;:&quot;Canadian&quot;},&quot;fra&quot;:{&quot;f&quot;:&quot;Canadienne&quot;,&quot;m&quot;:&quot;Canadien&quot;}},&quot;flag&quot;:&quot;\uD83C\uDDE8\uD83C\uDDE6&quot;,&quot;maps&quot;:{&quot;googleMaps&quot;:&quot;https://goo.gl/maps/jmEVLugreeqiZXxbA&quot;,&quot;openStreetMaps&quot;:&quot;https://www.openstreetmap.org/relation/1428125&quot;},&quot;population&quot;:38005238,&quot;gini&quot;:{&quot;2017&quot;:33.3},&quot;fifa&quot;:&quot;CAN&quot;,&quot;car&quot;:{&quot;signs&quot;:[&quot;CDN&quot;],&quot;side&quot;:&quot;right&quot;},&quot;timezones&quot;:[&quot;UTC-08:00&quot;,&quot;UTC-07:00&quot;,&quot;UTC-06:00&quot;,&quot;UTC-05:00&quot;,&quot;UTC-04:00&quot;,&quot;UTC-03:30&quot;],&quot;continents&quot;:[&quot;North America&quot;],&quot;flags&quot;:{&quot;png&quot;:&quot;https://flagcdn.com/w320/ca.png&quot;,&quot;svg&quot;:&quot;https://flagcdn.com/ca.svg&quot;},&quot;coatOfArms&quot;:{&quot;png&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/ca.png&quot;,&quot;svg&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/ca.svg&quot;},&quot;startOfWeek&quot;:&quot;sunday&quot;,&quot;capitalInfo&quot;:{&quot;latlng&quot;:[45.42,-75.7]},&quot;postalCode&quot;:{&quot;format&quot;:&quot;@#@ #@#&quot;,&quot;regex&quot;:&quot;^([ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ]) ?(\\d[ABCEGHJKLMNPRSTVWXYZ]\\d)$ &quot;}}]</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-11">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-11" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 200</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates capital city is <span class="argument">&quot;Ottawa&quot;</span></span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-12">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-12" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Capital City: [&quot;Ottawa&quot;]</p><p>Expected Capital City: Ottawa</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_940024458.html">@PositiveTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.278</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Positive Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;Mexico&quot;</span></span>
+  
+  <span class="lead-duration duration">0.277</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_-309663439.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-16" class="collapse collapsable-details">
+      <pre class="embedding-content">[{&quot;name&quot;:{&quot;common&quot;:&quot;Mexico&quot;,&quot;official&quot;:&quot;United Mexican States&quot;,&quot;nativeName&quot;:{&quot;spa&quot;:{&quot;official&quot;:&quot;Estados Unidos Mexicanos&quot;,&quot;common&quot;:&quot;M&#65533;xico&quot;}}},&quot;tld&quot;:[&quot;.mx&quot;],&quot;cca2&quot;:&quot;MX&quot;,&quot;ccn3&quot;:&quot;484&quot;,&quot;cca3&quot;:&quot;MEX&quot;,&quot;cioc&quot;:&quot;MEX&quot;,&quot;independent&quot;:true,&quot;status&quot;:&quot;officially-assigned&quot;,&quot;unMember&quot;:true,&quot;currencies&quot;:{&quot;MXN&quot;:{&quot;name&quot;:&quot;Mexican peso&quot;,&quot;symbol&quot;:&quot;$&quot;}},&quot;idd&quot;:{&quot;root&quot;:&quot;+5&quot;,&quot;suffixes&quot;:[&quot;2&quot;]},&quot;capital&quot;:[&quot;Mexico City&quot;],&quot;altSpellings&quot;:[&quot;MX&quot;,&quot;Mexicanos&quot;,&quot;United Mexican States&quot;,&quot;Estados Unidos Mexicanos&quot;],&quot;region&quot;:&quot;Americas&quot;,&quot;subregion&quot;:&quot;North America&quot;,&quot;languages&quot;:{&quot;spa&quot;:&quot;Spanish&quot;},&quot;translations&quot;:{&quot;ara&quot;:{&quot;official&quot;:&quot;???????? ??????? ?????????&quot;,&quot;common&quot;:&quot;???????&quot;},&quot;bre&quot;:{&quot;official&quot;:&quot;Stado&#65533;-Unanet Mec'hiko&quot;,&quot;common&quot;:&quot;Mec'hiko&quot;},&quot;ces&quot;:{&quot;official&quot;:&quot;Spojen&#65533; st&#65533;ty mexick&#65533;&quot;,&quot;common&quot;:&quot;Mexiko&quot;},&quot;cym&quot;:{&quot;official&quot;:&quot;United Mexican States&quot;,&quot;common&quot;:&quot;Mexico&quot;},&quot;deu&quot;:{&quot;official&quot;:&quot;Vereinigte Mexikanische Staaten&quot;,&quot;common&quot;:&quot;Mexiko&quot;},&quot;est&quot;:{&quot;official&quot;:&quot;Mehhiko &#65533;hendriigid&quot;,&quot;common&quot;:&quot;Mehhiko&quot;},&quot;fin&quot;:{&quot;official&quot;:&quot;Meksikon yhdysvallat&quot;,&quot;common&quot;:&quot;Meksiko&quot;},&quot;fra&quot;:{&quot;official&quot;:&quot;&#65533;tats-Unis du Mexique&quot;,&quot;common&quot;:&quot;Mexique&quot;},&quot;hrv&quot;:{&quot;official&quot;:&quot;Sjedinjene Meksi?ke Dr&#65533;ave&quot;,&quot;common&quot;:&quot;Meksiko&quot;},&quot;hun&quot;:{&quot;official&quot;:&quot;Mexik&#65533;i Egyes&#65533;lt &#65533;llamok&quot;,&quot;common&quot;:&quot;Mexik&#65533;&quot;},&quot;ita&quot;:{&quot;official&quot;:&quot;Stati Uniti del Messico&quot;,&quot;common&quot;:&quot;Messico&quot;},&quot;jpn&quot;:{&quot;official&quot;:&quot;???????&quot;,&quot;common&quot;:&quot;????&quot;},&quot;kor&quot;:{&quot;official&quot;:&quot;??? ???&quot;,&quot;common&quot;:&quot;???&quot;},&quot;nld&quot;:{&quot;official&quot;:&quot;Verenigde Mexicaanse Staten&quot;,&quot;common&quot;:&quot;Mexico&quot;},&quot;per&quot;:{&quot;official&quot;:&quot;?????? ???? ?????&quot;,&quot;common&quot;:&quot;?????&quot;},&quot;pol&quot;:{&quot;official&quot;:&quot;Meksyka?skie Stany Zjednoczone&quot;,&quot;common&quot;:&quot;Meksyk&quot;},&quot;por&quot;:{&quot;official&quot;:&quot;Estados Unidos Mexicanos&quot;,&quot;common&quot;:&quot;M&#65533;xico&quot;},&quot;rus&quot;:{&quot;official&quot;:&quot;???????????? ??????????? ?????&quot;,&quot;common&quot;:&quot;???????&quot;},&quot;slk&quot;:{&quot;official&quot;:&quot;Spojen&#65533; &#65533;t&#65533;y mexick&#65533;&quot;,&quot;common&quot;:&quot;Mexiko&quot;},&quot;spa&quot;:{&quot;official&quot;:&quot;Estados Unidos Mexicanos&quot;,&quot;common&quot;:&quot;M&#65533;xico&quot;},&quot;swe&quot;:{&quot;official&quot;:&quot;Mexikos f&#65533;renta stater&quot;,&quot;common&quot;:&quot;Mexiko&quot;},&quot;tur&quot;:{&quot;official&quot;:&quot;Birle?ik Meksika Devletleri&quot;,&quot;common&quot;:&quot;Meksika&quot;},&quot;urd&quot;:{&quot;official&quot;:&quot;????????? ????? ???????&quot;,&quot;common&quot;:&quot;???????&quot;},&quot;zho&quot;:{&quot;official&quot;:&quot;??????&quot;,&quot;common&quot;:&quot;???&quot;}},&quot;latlng&quot;:[23.0,-102.0],&quot;landlocked&quot;:false,&quot;borders&quot;:[&quot;BLZ&quot;,&quot;GTM&quot;,&quot;USA&quot;],&quot;area&quot;:1964375.0,&quot;demonyms&quot;:{&quot;eng&quot;:{&quot;f&quot;:&quot;Mexican&quot;,&quot;m&quot;:&quot;Mexican&quot;},&quot;fra&quot;:{&quot;f&quot;:&quot;Mexicaine&quot;,&quot;m&quot;:&quot;Mexicain&quot;}},&quot;flag&quot;:&quot;\uD83C\uDDF2\uD83C\uDDFD&quot;,&quot;maps&quot;:{&quot;googleMaps&quot;:&quot;https://goo.gl/maps/s5g7imNPMDEePxzbA&quot;,&quot;openStreetMaps&quot;:&quot;https://www.openstreetmap.org/relation/114686&quot;},&quot;population&quot;:128932753,&quot;gini&quot;:{&quot;2018&quot;:45.4},&quot;fifa&quot;:&quot;MEX&quot;,&quot;car&quot;:{&quot;signs&quot;:[&quot;MEX&quot;],&quot;side&quot;:&quot;right&quot;},&quot;timezones&quot;:[&quot;UTC-08:00&quot;,&quot;UTC-07:00&quot;,&quot;UTC-06:00&quot;],&quot;continents&quot;:[&quot;North America&quot;],&quot;flags&quot;:{&quot;png&quot;:&quot;https://flagcdn.com/w320/mx.png&quot;,&quot;svg&quot;:&quot;https://flagcdn.com/mx.svg&quot;},&quot;coatOfArms&quot;:{&quot;png&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/mx.png&quot;,&quot;svg&quot;:&quot;https://mainfacts.com/media/images/coats_of_arms/mx.svg&quot;},&quot;startOfWeek&quot;:&quot;monday&quot;,&quot;capitalInfo&quot;:{&quot;latlng&quot;:[19.43,-99.13]},&quot;postalCode&quot;:{&quot;format&quot;:&quot;#####&quot;,&quot;regex&quot;:&quot;^(\\d{5})$&quot;}}]</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-17">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-17" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 200</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates capital city is <span class="argument">&quot;Mexico City&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-18">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-18" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Capital City: [&quot;Mexico City&quot;]</p><p>Expected Capital City: Mexico City</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1109432006.html">@NegativeTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.304</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Nagative Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-20" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;Whatever&quot;</span></span>
+  
+  <span class="lead-duration duration">0.304</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_-470550162.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-22" class="collapse collapsable-details">
+      <pre class="embedding-content">{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">404</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-23">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-23" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 404</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates error message is <span class="argument">&quot;Not Found&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-24">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-24" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Error Message: Not Found</p><p>Expected Error Message: Not Found</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1109432006.html">@NegativeTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.286</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Nagative Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;Somewhere&quot;</span></span>
+  
+  <span class="lead-duration duration">0.286</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_-470550162.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-28" class="collapse collapsable-details">
+      <pre class="embedding-content">{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">404</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-29">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-29" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 404</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates error message is <span class="argument">&quot;Not Found&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-30">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-30" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Error Message: Not Found</p><p>Expected Error Message: Not Found</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1109432006.html">@NegativeTest</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.314</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Nagative Sceario: Get Capital City with Country Name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-32" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">CountriesAPISteps.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User submits GET request to <span class="argument">&quot;countryNameURL&quot;</span> for <span class="argument">&quot;Anuwhere&quot;</span></span>
+  
+  <span class="lead-duration duration">0.313</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
+      <a>Attachment 1 (JSON)</a>
+      <a href="embeddings/embedding_-470550162.json" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-34" class="collapse collapsable-details">
+      <pre class="embedding-content">{&quot;status&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}</pre>
+    </div>
+  </div>
+            </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User validates response status code is <span class="argument">404</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-35">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-35" class="collapse collapsable-details " >
+          
+          <pre><p>Status Code: 404</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates error message is <span class="argument">&quot;Not Found&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-36">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-36" class="collapse collapsable-details " >
+          
+          <pre><p>Actual Error Message: Not Found</p><p>Expected Error Message: Not Found</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
